@@ -57,6 +57,16 @@ body {
     linear-gradient(transparent, transparent, #0007);
 }
 
+#drag-container p {
+  font-family: serif;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: red;
+  font-size: 30px;
+  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
 #ground {
   width: 900px;
   height: 900px;
@@ -68,7 +78,7 @@ body {
   background: -webkit-radial-gradient(
     center center,
     farthest-side,
-    #999,
+    #9995,
     transparent
   );
 }
