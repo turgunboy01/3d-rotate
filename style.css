@@ -48,6 +48,7 @@ body {
   box-shadow: 0 0 8px #fff;
   -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, #0005);
+  border-radius: 10px;
 }
 
 #drag-container img:hover {
@@ -57,15 +58,23 @@ body {
     linear-gradient(transparent, transparent, #0007);
 }
 
-#drag-container p {
+#drag-container .content {
   font-family: serif;
   position: absolute;
   top: 100%;
   left: 50%;
-  color: red;
-  font-size: 30px;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 700;
   -webkit-transform: translate(-50%, -50%) rotateX(90deg);
   transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+#drag-container .logo1 {
+  font-size: 28px;
+  /* line-height: 0px; */
+  text-align: center;
+  color: yellowgit ;
 }
 #ground {
   width: 900px;
@@ -78,7 +87,7 @@ body {
   background: -webkit-radial-gradient(
     center center,
     farthest-side,
-    #9995,
+    rgba(238, 0, 0, 0.333),
     transparent
   );
 }

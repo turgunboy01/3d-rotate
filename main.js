@@ -95,3 +95,11 @@ document.onpointerdown = function (e) {
   };
   return false;
 };
+
+document.onmousewheel = function (e) {
+  e = e || window.event;
+
+  var d = e.wheelDelta / 20 || -e.deltaY / 20; // deltaY for modern browsers
+  radius += d;
+  init(1); // Optional: This could be optimized if recalculating isn't needed every scroll
+};
